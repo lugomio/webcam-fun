@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Webcam Fun - lugom.io</title>
+    <meta property="og:title" content="Webcam Fun - lugom.io">
+    <meta property="og:description" content="Um projeto de aprendizado feito para se divertir com uma webcam.">
+    <meta property="og:image" content="https://lugom.io/projects/webcam-fun/assets/img/banner.png">
+    <meta property="twitter:title" content="Webcam Fun - lugom.io">
+    <meta property="twitter:description" content="Um projeto de aprendizado feito para se divertir com uma webcam.">
+    <meta property="twitter:image" content="https://lugom.io/projects/webcam-fun/assets/img/banner.png">
+    <meta property="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="https://lugom.io/assets/images/favicon.png" type="image/png">
+    <link rel="canonical" href="https://lugom.io/projects/webcam-fun/">
+</head>
+
+<body>
+    <main>
+        <button id="permissions">Permitir Webcam</button>
+        <div class="camera">
+            <canvas id="canvas"></canvas>
+            <video id="video"></video>
+            <div class="controls">
+                <button id="takePhoto">Tirar Foto</button>
+                <div class="inputs">
+                    <div>
+                        <label for="normal">NORMAL:</label>
+                        <input type="radio" name="effects" id="normal" checked>
+                    </div>
+                    <div>
+                        <label for="red">RED EFFECT:</label>
+                        <input type="radio" name="effects" id="red">
+                    </div>
+                    <div>                    
+                        <label for="split">SPLIT EFFECT:</label>
+                        <input type="radio" name="effects" id="split">
+                    </div>
+                    <div>
+                        <label for="ghost">GHOST EFFECT:</label>
+                        <input type="radio" name="effects" id="ghost">
+                    </div>
+                    <div>
+                        <label for="green">REMOVE GREEN:</label>
+                        <input type="radio" name="effects" id="green">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="photos"></div>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+    <script id="fixedNavLugomJs" src="https://lugom.io/assets/js/fixedNavLugom.js"></script>
+</body>
+
+</html>
